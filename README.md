@@ -2,8 +2,8 @@
 
 This is a collection of physics related projects I've made.
 
-## pendulumWithDrag:
-- This program is inspired by and partly taken from 3blue1brown's youtube video: https://youtu.be/p_di4Zn4wz4
+### pendulumWithDrag:
+- This program is inspired by and partly taken from [3blue1brown's youtube video](https://youtu.be/p_di4Zn4wz4)
 - It aims to represent a pendulum with drag through differential equations. Imagine a pendulum at an initial
 velocity theta_dot and angle theta. The pendulum will tend towards a state of rest hanging at the bottom.
 It may loop around a couple of times before losing enough velocity, however, it will always start to

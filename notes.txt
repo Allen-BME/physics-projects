@@ -1,0 +1,24 @@
+# NOTES from developing...
+
+# y = y0 + v0t + 0.5at^2
+
+# goal: draw the arc of a projectile, with air resistance, from any height
+
+# 1: draw the arc of a projectile from h0 = 0, no air resistance
+# 2: draw the arc of a projectile from any height, no air resitance
+
+#################################################################
+
+# assuming initial height equals final height, midpoint is max height. 
+
+# xdistance = vx * time
+
+# y = v0t - 4.9t^2
+# vy = v0y - 9.8t
+
+# expected output: two arrays, one for x positions and one for y positions for each time increment
+
+# we have a = -9.8, v0y, delta_y0 = 0, delta_yfinal = 0
+# for same initial height, vf = -v0
+
+# for h0 = 0, y = delta_y = v0y*t - 4.9t^2

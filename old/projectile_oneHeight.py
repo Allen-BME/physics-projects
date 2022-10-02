@@ -4,6 +4,8 @@ Date: 3/24/2022
 Purpose: This program takes user inputted values for the inital velocity and launch angle of a projectile
     and returns a plot of the arc of the projectile. The program assumes that the inital height was at 0
     and that there is no air resistance.
+
+# outdated. projectile.py handles multiple heights
 """
 
 import numpy as np

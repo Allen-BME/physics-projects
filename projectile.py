@@ -1,6 +1,13 @@
 """
+This program was inspired by the classic physics 1 problem of a projectile. This assumes no air 
+resistance. Using equally long x and y axes, the program shows the arc that a projectile would
+take from a given height, angle, and velocity. 
+
 Author: Carter Allen
-Date: 3/25/2022
+
+Date Created: 3/25/2022
+Last Updated: 10/1/2022
+
 Purpose: This program takes user inputted values for the inital velocity, launch angle, and inital height of a projectile
     and returns a plot of the arc of the projectile. The program assumes that there is no air resistance.
 """

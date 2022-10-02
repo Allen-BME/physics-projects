@@ -27,11 +27,13 @@ Notes:
 TODO:
     - handle non-numerical inputs for velocity and theta
     - make what's happening in this mess clearer
+    - maybe use degrees instead so it's more intuitive
 """
 
 
 import numpy as np
 import matplotlib.pyplot as plt
+from os import system
 
 
 # Physical Constants
@@ -49,7 +51,7 @@ def getThetaDoubleDot(theta, thetaDot):
 def get_theta(t, theta, theta_dot):
     """
     t = length of time (s) to analyze
-    theta = initial angle (radians)
+    theta = initial angle to the right of pendulum's resting state (radians)
     theta_dot = initial velocity (m/s)
 
     return: array of angles (theta) corresponding to 0.01 s steps in time
@@ -77,6 +79,9 @@ def get_theta(t, theta, theta_dot):
     return values
 
 
+clear = lambda: system('cls')
+
+
 def ask_user_if_continue():
     ans = input("Would you like to continue? (y/n): ")
     while ans.lower() not in ['y', 'n']:
@@ -88,6 +93,8 @@ def ask_user_if_continue():
 # run this section if program is being directly run
 if __name__ == "__main__":
     
+    clear()
+
     print("*********************************************")
     print("Pendulum with drag:")
     print(" - angle measured in radians")
@@ -101,8 +108,10 @@ if __name__ == "__main__":
     while user_wants_to_continue:
 
         # prompt user for input
-        theta = float(input("Enter an initial angle: "))
-        theta_dot = float(input("Enter an initial velocity: "))
+        print("Enter an initial angle from resting state.")
+        theta = float(input("(radians): "))
+        print("Enter an initial velocity.")
+        theta_dot = float(input("(m/s): "))
 
         # get the values
         values = get_theta(
@@ -120,3 +129,5 @@ if __name__ == "__main__":
         plt.show()
 
         user_wants_to_continue = ask_user_if_continue()
+    
+    print("Program ended.")

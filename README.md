@@ -10,3 +10,9 @@ It may loop around a couple of times before losing enough velocity, however, it 
 come to a rest. 
 - The relationship between theta and theta_dot can be represented with two axes of a graph
 and the result of a given set of inital conditions can be represented as a line.
+
+### projectile:
+- This program was inspired by the classic physics 1 problem of a projectile. 
+- This assumes no air resistance.
+- Using equally long x and y axes, the program shows the arc that a projectile would
+take from a given height, angle, and velocity. 
